@@ -19,7 +19,8 @@ const moveCharsForward = (str) =>
 console.log(
   "\n" +
     "2. Move characters forward one char in the alphabet. Chars to move: abcd. Answer = " +
-    moveCharsForward("abcd") + "."
+    moveCharsForward("abcd") +
+    ".",
 );
 
 //3. write a javascript program to get the current date
@@ -39,13 +40,19 @@ console.log("\n" + "3. Return the current date. Answer = " + getDate() + ".");
 //4. Write a javascript program to create a new string adding "New!" in front of a given string.
 
 const addNew = (str) => {
-  "New! " + str;
-
-  if (str.indexOf("New!")) {
+  
+  newStr = str.substr(0,3);
+  if (newStr === "New") {
     return str;
   } else {
-    return "New! " + str;
+    return "New " + str;
   }
 };
 
-console.log("\n" + "4. Add 'New' to the front of a string. Answer = " + addNew('New' + ' I love New York' + "!"));
+console.log("\n" + "4. Add 'New' to the front of a string. Answer = " + addNew("I love New York" + "!")); 
+            console.log("\n" + "4b. " +  addNew("New I love New York" + "!"));
+
+
+/* 5. Write a javascript program to create a new string from a given string taking the first 3 characters and the  
+last 3 characters of a string and adding them together. The string length must be 3 or more, if not, the  
+result should be the empty string.  */
