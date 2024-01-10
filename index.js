@@ -40,8 +40,7 @@ console.log("\n" + "3. Return the current date. Answer = " + getDate() + ".");
 //4. Write a javascript program to create a new string adding "New!" in front of a given string.
 
 const addNew = (str) => {
-  
-  newStr = str.substr(0,3);
+  newStr = str.substr(0, 3);
   if (newStr === "New") {
     return str;
   } else {
@@ -49,10 +48,19 @@ const addNew = (str) => {
   }
 };
 
-console.log("\n" + "4. Add 'New' to the front of a string. Answer = " + addNew("I love New York" + "!")); 
-            console.log("\n" + "4b. " +  addNew("New I love New York" + "!"));
-
+console.log(
+  "\n" +
+    "4. Add 'New' to the front of a string. Answer = " +
+    addNew("I love New York" + "!"),
+);
+console.log("\n" + "4b. " + addNew("New I love New York" + "!"));
 
 /* 5. Write a javascript program to create a new string from a given string taking the first 3 characters and the  
 last 3 characters of a string and adding them together. The string length must be 3 or more, if not, the  
 result should be the empty string.  */
+
+const combineStr = (str) =>{
+  (newStr = str.substr(0, 3) + str.substr(str.length - 3, 3));
+return newStr;
+}
+console.log("\n" + "5. Create a new string based on the first and last three characters. Word = youarethebestest. Answer = " +combineStr( "youarethebestest"));
