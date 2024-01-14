@@ -73,3 +73,11 @@ const combineStr = (str) =>{
 return newStr;
 }
 console.log("\n" + "5. Create a new string based on the first and last three characters. Word = youarethebestest. Answer = " +combineStr( "youarethebestest"));
+
+
+
+
+//6. Write javascript program to extract the first half of a string of even length
+
+const firstHalf = str => str.substr(0, str.length / 2);
+console.log("\n" + "6. Return the first half of a string of even length. String = 'youarethebestest'. Answer = " + firstHalf("youarethebestest"));  
