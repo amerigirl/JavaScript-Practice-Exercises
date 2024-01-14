@@ -7,6 +7,8 @@ console.log(
     getFileExtension("www.google.com"),
 );
 
+
+
 //2. Write a javascript program to replace every character in a given string with the character following it in the alphabet
 
 const moveCharsForward = (str) =>
@@ -23,6 +25,8 @@ console.log(
     ".",
 );
 
+
+
 //3. write a javascript program to get the current date
 
 const getDate = (date) => {
@@ -36,6 +40,8 @@ const getDate = (date) => {
 };
 
 console.log("\n" + "3. Return the current date. Answer = " + getDate() + ".");
+
+
 
 //4. Write a javascript program to create a new string adding "New!" in front of a given string.
 
@@ -54,6 +60,9 @@ console.log(
     addNew("I love New York" + "!"),
 );
 console.log("\n" + "4b. " + addNew("New I love New York" + "!"));
+
+
+
 
 /* 5. Write a javascript program to create a new string from a given string taking the first 3 characters and the  
 last 3 characters of a string and adding them together. The string length must be 3 or more, if not, the  
