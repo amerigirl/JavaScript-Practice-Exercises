@@ -80,4 +80,19 @@ console.log("\n" + "5. Create a new string based on the first and last three cha
 //6. Write javascript program to extract the first half of a string of even length
 
 const firstHalf = str => str.substr(0, str.length / 2);
-console.log("\n" + "6. Return the first half of a string of even length. String = 'youarethebestest'. Answer = " + firstHalf("youarethebestest"));  
+console.log("\n" + "6. Return the first half of a string of even length. String = 'youarethebestest'. Answer = " + firstHalf("youarethebestest") + ".");  
+
+
+
+//7. Write a JavaScript program to concatenate two strings except their first
+//character
+
+const notFirstLine = (str1, str2) => {
+  
+    let firstString = str1.slice(1);
+    let secondString = str2.slice(1);
+  
+    return `${firstString} + ${secondString}`;
+  
+};
+console.log("\n" + "7. Concatenate two strings except their first character. Words = Happy, love. Answer = " + notFirstLine("Happy", "love") + ".");
