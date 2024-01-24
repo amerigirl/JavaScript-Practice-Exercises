@@ -7,8 +7,6 @@ console.log(
     getFileExtension("www.google.com"),
 );
 
-
-
 //2. Write a javascript program to replace every character in a given string with the character following it in the alphabet
 
 const moveCharsForward = (str) =>
@@ -25,8 +23,6 @@ console.log(
     ".",
 );
 
-
-
 //3. write a javascript program to get the current date
 
 const getDate = (date) => {
@@ -40,8 +36,6 @@ const getDate = (date) => {
 };
 
 console.log("\n" + "3. Return the current date. Answer = " + getDate() + ".");
-
-
 
 //4. Write a javascript program to create a new string adding "New!" in front of a given string.  If the given string begins with "New!" already then return the original string.
 
@@ -60,8 +54,6 @@ console.log(
     addNew("I love New York" + "!"),
 );
 console.log("\n" + "4b. " + addNew("New I love New York" + "!"));
-
-
 
 /* 5. Write a javascript program to create a new string from a given string taking the first 3 characters and the  
 last 3 characters of a string and adding them together. The string length must be 3 or more, if not, the  
@@ -114,4 +106,46 @@ const nearestTo100 = (num1, num2) => {
     }
   }
 };
-console.log("\n" + "8. Which number is closest to 100? Numbers: 99, 40. Answer = " + nearestTo100( 99, 40) + ".");
+
+console.log(
+  "\n" +
+    "8. Which number is closest to 100? Numbers: 99, 40. Answer = " +
+    nearestTo100(99, 40) +
+    ".",
+);
+
+//9.  Write a javascript program to find the number of even digits in an array of integers
+
+const evenNum = (arr) => arr.filter((num) => num % 2 === 0).length; //add the length to get the total count
+
+console.log(
+  "\n" +
+    "9. How many even numbers are in this array? Numbers:" +
+    "\n" +
+    "   1,2,3,4,5,6,7,8,9,10. Answer = " +
+    evenNum([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]) +
+    ".",
+);
+
+//10. Write a javascript program to find the number of even values up to a given number
+const evenNumUpTo = (arr) => 
+     arr.filter(num => num % 2 === 0).length;
+  
+
+const createArrayOfNums = (num) => {
+  const returnArray = [];
+  for(let i = 0; i <= num; i++){
+    returnArray.push(i);
+  }
+  return returnArray
+}
+  
+
+
+  
+console.log(
+  "\n" +
+    "10. How many even numbers are in an array that is from 1-16? Answer = " +
+    evenNumUpTo(createArrayOfNums(20)) +
+    ".",
+);
